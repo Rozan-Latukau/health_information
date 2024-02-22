@@ -1,13 +1,14 @@
 import Navbar from "@/Layouts/Authenticated/navbar";
-import Jumbotron from "@/Components/Jumbotron"
 
-const Index = () => {
+const Authenticated = ({ auth, children }) => {
     return (
         <>
-            <Navbar></Navbar>
-            <Jumbotron></Jumbotron>
+            <div className="mx-auto max-w-screen hidden lg:block">
+                <Navbar auth={auth} />
+                <main>{children}</main>
+            </div>
         </>
     )
 }
 
-export default Index;
+export default Authenticated;

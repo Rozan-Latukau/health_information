@@ -1,3 +1,8 @@
 .btn-orange{
     @apply bg-[#FC6736] text-white p-2 rounded-md border-solid border-2 border-white hover:bg-black;
 }
+
+.btn-secondary {
+    @apply bg-gray-800 text-gray-200 p-2 rounded-md border-solid border-gray-200 hover:bg-gray-300 hover:text-gray-800
+    ;
+}

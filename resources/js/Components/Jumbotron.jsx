@@ -10,7 +10,7 @@ const Jumbotron = () => {
             <div className="absolute justify-center flex">
                 <div className="text-white ps-[200px] pe-[200px] text-center">
                     <h3 className="text-[40px] font-bold">Selamat Datang</h3>
-                    <h1 className="text-[80px] font-custom ">RNL Smart</h1>
+                    <h1 className="text-[80px] font-custom ">RNL Health</h1>
                     <p className="mb-6">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Curabitur sagittis leo fringilla nibh pretium, a

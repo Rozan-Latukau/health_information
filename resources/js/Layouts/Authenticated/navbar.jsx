@@ -5,7 +5,7 @@ const navbar = () => {
         <header className="bg-[#0C2D57] fixed w-full z-50">
             <nav className="flex justify-between items-center mx-auto w-[90%] h-[70px]">
                 <div className="w-auto">
-                    <h1 className="text-white font-bold text-[24px]">RNL Smart</h1>
+                    <h1 className="text-white font-bold text-[24px]">RNL Health</h1>
                 </div>
                 <div className="">
                     <ul className="text-white flex items-center gap-8">

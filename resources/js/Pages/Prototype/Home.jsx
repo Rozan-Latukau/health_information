@@ -6,7 +6,6 @@ import HealthCard from "@/Components/HealthCard";
 import Flickity from "react-flickity-component";
 import Berita from "@/Components/CardBerita";
 import { Head } from "@inertiajs/react";
-import { BsCaretLeftFill, BsCaretRightFill } from "react-icons/bs";
 import SecondaryButton from "@/Components/SecondaryButton";
 
 
@@ -56,9 +55,9 @@ const Home = () => {
                 <div className="bg-[#EFECEC] pt-14 pb-14 mt-[116px]">
                     <div className="w-[90%] mx-auto">
                         <div className="text-[#0C2D57]">
-                            <h1 className="font-bold text-[40px]">Artikel</h1>
+                            <h1 className="font-bold text-[40px]">Berita</h1>
                             <div className="flex justify-between items-end">
-                                <p>Artikel Mengenai Kesehatan yang menyangkut dengan Psikolog</p>
+                                <p>Berita Mengenai Kesehatan secara global</p>
                                 <SecondaryButton
                                     type="button"
                                     variant="secondary"
@@ -75,7 +74,7 @@ const Home = () => {
                                 {[1, 2, 3].map((i) => (
                                     <Berita
                                         key={i}
-                                        field="Artikel"
+                                        field="Berita"
                                         name="Lorem Ipsum"
                                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. a libero tellus. "
                                         thumbnail="/images/cardartikel.png"

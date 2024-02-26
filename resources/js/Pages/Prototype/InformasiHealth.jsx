@@ -1,10 +1,12 @@
 import Authenticated from "@/Layouts/Authenticated/index";
 import InformasiCard from "@/Components/InformasiCard";
 import PrimaryButton from "@/Components/PrimaryButton";
+import { Head } from "@inertiajs/react";
 
 const InformasiHealth = () => {
     return (
         <Authenticated>
+            <Head title="Informasi Kesehatan" />
             <div className="w-[90%] mx-auto mt-10">
                 <h1 className="text-[#0C2D57] text-[40px] font-bold">INFORMASI KESEHATAN</h1>
                 <p className="mb-10">

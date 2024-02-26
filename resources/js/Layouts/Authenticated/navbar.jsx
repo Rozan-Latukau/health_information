@@ -37,7 +37,7 @@ const Navbar = () => {
                             <Link href={route('prototype.informasiHealth')}>Informasi Kesehatan</Link>
                         </li>
                         <li>
-                            <a href="#">Artikel</a>
+                            <a href="#">Berita</a>
                         </li>
                     </ul>
                 </div>

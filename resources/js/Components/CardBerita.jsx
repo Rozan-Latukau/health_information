@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Berita = ({ name, thumbnail, field, text }) => {
     return (
         <div className="overflow-hidden group mt-[30px] w-[400px]">
@@ -24,5 +26,13 @@ const Berita = ({ name, thumbnail, field, text }) => {
         </div >
     )
 }
+
+Berita.propTypes = {
+    name: PropTypes.string.isRequired,
+    field: PropTypes.string.isRequired,
+    thumbnail: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+};
+
 
 export default Berita;

@@ -57,7 +57,7 @@ const Home = () => {
                     <div className="w-[90%] mx-auto">
                         <div className="text-[#0C2D57]">
                             <h1 className="font-bold text-[40px]">Artikel</h1>
-                            <div className="flex justify-between mt-2 items-end">
+                            <div className="flex justify-between items-end">
                                 <p>Artikel Mengenai Kesehatan yang menyangkut dengan Psikolog</p>
                                 <SecondaryButton
                                     type="button"

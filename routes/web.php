@@ -22,10 +22,14 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::prefix('prototype')->group(function () {
-    Route::get('/home', function () {
+Route::prefix('prototype')->name('prototype.')->group(function () {
+    route::get('/home', function () {
         return Inertia::render('Prototype/Home');
     }) -> name('home');
+    route::get('/informasiHealth', function () {
+        return Inertia::render('Prototype/InformasiHealth');
+    }) -> name('informasiHealth');
 });
+
 
 require __DIR__.'/auth.php';

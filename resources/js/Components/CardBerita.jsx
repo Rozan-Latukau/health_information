@@ -1,6 +1,7 @@
+import { Link } from "@inertiajs/react";
 import PropTypes from "prop-types";
 
-const Berita = ({ name, thumbnail, field, text }) => {
+const Berita = ({ name, thumbnail, field, text, slug }) => {
     return (
         <div className="overflow-hidden group mt-[30px] w-[400px]">
             <img
@@ -23,6 +24,7 @@ const Berita = ({ name, thumbnail, field, text }) => {
                     </p>
                 </div>
             </div>
+            <Link href="#" className="inset-0  z-50"></Link>
         </div >
     )
 }
@@ -32,6 +34,7 @@ Berita.propTypes = {
     field: PropTypes.string.isRequired,
     thumbnail: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
 };
 
 

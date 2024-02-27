@@ -8,7 +8,6 @@ import Berita from "@/Components/CardBerita";
 import { Head } from "@inertiajs/react";
 import SecondaryButton from "@/Components/SecondaryButton";
 
-
 const Home = () => {
     const flcikityOptions = {
         cellAlign: "left",
@@ -18,7 +17,7 @@ const Home = () => {
         pageDots: false,
         prevNextButtons: false,
         draggable: ">1",
-        autoPlay: 1000,
+        autoPlay: 2000,
     };
     return (
         <>
@@ -34,17 +33,30 @@ const Home = () => {
                 <div className="bg-[#0C2D57] pt-14 pb-14 mt-[116px]">
                     <div className="w-[90%] mx-auto">
                         <div className="text-center text-white">
-                            <h1 className="font-bold text-[40px]">Lorem Ipsum</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. a libero </p>
+                            <h1 className="font-bold text-[40px]">
+                                Lorem Ipsum
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. a libero{" "}
+                            </p>
                         </div>
-                        <div>
-                            <Flickity className="gap-[30px] mt-14" options={flcikityOptions}>
+                        <div >
+                            <Flickity
+                                className=" mt-14"
+                                options={flcikityOptions}
+                            >
                                 {[1, 2, 3, 4, 5].map((i) => (
                                     <HealthCard
                                         key={i}
-                                        name="Lorem Ipsum"
+                                        name={`Lorem Ipsum ${i}`}
                                         field="Konsultasi"
-                                        thumbnail="/images/healthcard 1.png"
+                                        teks="Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. a libero
+                                        Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. a libero
+                                        Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. a libero"
                                     />
                                 ))}
                             </Flickity>
@@ -75,7 +87,8 @@ const Home = () => {
                                     <Berita
                                         key={i}
                                         field="Berita"
-                                        name="Lorem Ipsum"
+                                        name={`Lorem Ipsum ${i}`}
+                                        slug="Berita"
                                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. a libero tellus. "
                                         thumbnail="/images/cardartikel.png"
                                     />
@@ -94,9 +107,8 @@ const Home = () => {
                     </div>
                 </div>
             </Authenticated>
-
         </>
-    )
-}
+    );
+};
 
 export default Home;

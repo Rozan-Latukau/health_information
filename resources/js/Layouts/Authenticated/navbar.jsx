@@ -31,13 +31,13 @@ const Navbar = () => {
                 <div>
                     <ul className="text-white flex items-center gap-8">
                         <li>
-                            <a href="#">Beranda</a>
+                            <Link href={route('prototype.home')}>Beranda</Link>
                         </li>
                         <li>
                             <Link href={route('prototype.informasiHealth')}>Informasi Kesehatan</Link>
                         </li>
                         <li>
-                            <a href="#">Berita</a>
+                            <Link href={route('prototype.beritaHealth')}>Berita</Link>
                         </li>
                     </ul>
                 </div>

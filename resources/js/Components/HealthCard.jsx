@@ -1,21 +1,15 @@
 import PropTypes from "prop-types";
 
-const HealthCard = ({ name, field, thumbnail }) => {
+const HealthCard = ({ name, field, teks }) => {
     return (
-        <div className="absolute overflow-hidden group mr-[30px]">
-            <img
-                src={thumbnail}
-                className="object-cover h-[500px]"
-                alt=""
-            />
-            <div
-                className="absolute bottom-0 h-[100px] left-0 right-0 bg-gradient-to-t from-black  flex justify-center text-center items-center px-7 "
-            >
-                <div>
-                    <div className="font-medium text-[35px] text-white">
+        <div className="absolute overflow-hidden group ">
+            <div className="w-[415px] mr-[15px]">
+                <div className="bg-[#D9D9D9] p-5 rounded-md">
+                    <p className="mb-0 text-md">{teks}</p>
+                    <h3 className="text-[22px] text-[#0C2D57] font-bold mt-5 ">
                         {name}
-                    </div>
-                    <p className="mb-0 text-md text-[#FC6736] font-light">
+                    </h3>
+                    <p className="mb-0 text-[18px] text-[#FC6736] font-medium">
                         {field}
                     </p>
                 </div>
@@ -27,7 +21,7 @@ const HealthCard = ({ name, field, thumbnail }) => {
 HealthCard.propTypes = {
     name: PropTypes.string.isRequired,
     field: PropTypes.string.isRequired,
-    thumbnail: PropTypes.string.isRequired,
+    teks: PropTypes.string.isRequired,
 };
 
 export default HealthCard;

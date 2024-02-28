@@ -41,9 +41,8 @@ const Home = () => {
                                 adipiscing elit. a libero{" "}
                             </p>
                         </div>
-                        <div >
+                        <div className="mt-14">
                             <Flickity
-                                className=" mt-14"
                                 options={flcikityOptions}
                             >
                                 {[1, 2, 3, 4, 5].map((i) => (
@@ -82,7 +81,7 @@ const Home = () => {
                                     <BsCaretRightFill className="text-3xl" />
                                 </div> */}
                             </div>
-                            <div className="flex gap-[30px]">
+                            <div className="grid grid-cols-3 gap-[30px]">
                                 {[1, 2, 3].map((i) => (
                                     <Berita
                                         key={i}

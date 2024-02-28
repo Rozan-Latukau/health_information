@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Berita = ({ name, thumbnail, field, text, slug }) => {
     return (
-        <div className="overflow-hidden group mt-[30px] w-[400px]">
+        <div className="overflow-hidden group mt-[30px] ">
             <img
                 src={thumbnail}
                 className="object-cover h-[244px] rounded-[16px]"
@@ -24,7 +24,7 @@ const Berita = ({ name, thumbnail, field, text, slug }) => {
                     </p>
                 </div>
             </div>
-            <Link href="#" className="inset-0  z-50"></Link>
+            <Link href="#" className="inset-0 z-50"></Link>
         </div >
     )
 }

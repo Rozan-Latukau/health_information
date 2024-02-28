@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 
 const HealthCard = ({ name, field, teks }) => {
     return (
-        <div className="absolute overflow-hidden group ">
-            <div className="w-[415px] mr-[15px]">
+        <div className="absolute overflow-hidden group mr-[15px]">
+            <div className="w-[400px]">
                 <div className="bg-[#D9D9D9] p-5 rounded-md">
                     <p className="mb-0 text-md">{teks}</p>
                     <h3 className="text-[22px] text-[#0C2D57] font-bold mt-5 ">

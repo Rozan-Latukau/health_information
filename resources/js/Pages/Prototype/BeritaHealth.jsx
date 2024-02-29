@@ -1,5 +1,6 @@
 import Authenticated from "@/Layouts/Authenticated/index";
 import HeaderBerita from "@/Layouts/Authenticated/HeaderBerita";
+import Berita from "@/Components/CardBerita";
 import { Head } from "@inertiajs/react";
 
 const BeritaHealth = () => {
@@ -7,20 +8,22 @@ const BeritaHealth = () => {
         <Authenticated>
             <Head title="Berita Kesehatan" />
             <div className="w-[90%] mx-auto mt-10">
-                <h1 className="text-[#0C2D57] text-[40px] font-bold">
-                    Artikel
-                </h1>
-                <p className="mb-10">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Curabitur sagittis leo fringilla nibh pretium, a consectetur
-                    orci sagittis. Suspendisse rhoncus lobortis est vel
-                    pellentesque. Sed quis tellus tincidunt, pretium nunc et,
-                    efficitur urna. Etiam ex eros, hendrerit in nulla nec,
-                    fringilla scelerisque mi.
-                </p>
                 <HeaderBerita />
+                <div className="grid grid-cols-3 gap-[30px]">
+                    {[1, 2, 3, 4, 5, 6].map((i) => (
+                        <Berita
+                            key={i}
+                            field="Berita"
+                            name={`Lorem Ipsum ${i}`}
+                            slug="Berita"
+                            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. a libero tellus. "
+                            thumbnail="/images/cardartikel.png"
+                        />
+                    ))}
+                </div>
+
             </div>
-        </Authenticated>
+        </Authenticated >
     );
 };
 

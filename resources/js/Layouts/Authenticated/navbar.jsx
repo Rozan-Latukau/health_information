@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import PrimaryButton from "@/Components/PrimaryButton";
+import MenuItem from "./menuitem";
+import UserMenu from "./menulist";
 import { Link } from "@inertiajs/react";
 
 const Navbar = () => {
@@ -13,10 +15,10 @@ const Navbar = () => {
             setIsFixed(scrollPosition > threshold);
         };
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
@@ -26,23 +28,26 @@ const Navbar = () => {
         <header className={`bg-[#0C2D57] w-full z-50 ${navbarclass}`}>
             <nav className="flex justify-between items-center mx-auto w-[90%] h-[70px]">
                 <div className="w-auto">
-                    <h1 className="text-white font-bold text-[24px]">RNL Health</h1>
+                    <h1 className="text-white font-bold text-[24px]">
+                        RNL Health
+                    </h1>
+                </div>
+                <div className="text-white flex items-center gap-8">
+                    {UserMenu.map((menu, index) => (
+                        <MenuItem
+                            key={`${index}-${menu.text}`}
+                            link={menu.link}
+                            text={menu.text}
+                            isActive={menu.link && route().current(menu.link)}
+                        />
+                    ))}
                 </div>
                 <div>
-                    <ul className="text-white flex items-center gap-8">
-                        <li>
-                            <Link href={route('prototype.home')}>Beranda</Link>
-                        </li>
-                        <li>
-                            <Link href={route('prototype.informasiHealth')}>Informasi Kesehatan</Link>
-                        </li>
-                        <li>
-                            <Link href={route('prototype.beritaHealth')}>Berita</Link>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <PrimaryButton type="submit" variant="orange">Konsultasi</PrimaryButton>
+                    <Link href="#">
+                        <PrimaryButton type="submit" variant="orange">
+                            Konsultasi
+                        </PrimaryButton>
+                    </Link>
                 </div>
             </nav>
         </header>

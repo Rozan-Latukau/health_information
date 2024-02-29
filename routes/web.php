@@ -32,6 +32,9 @@ Route::prefix('prototype')->name('prototype.')->group(function () {
     route::get('/beritaHealth', function () {
         return Inertia::render('Prototype/BeritaHealth');
     }) -> name('beritaHealth');
+    route::get('/showberita/{slug}', function () {
+        return Inertia::render('Prototype/Showberita/Show');
+    }) -> name('showberita.show');
 });
 
 

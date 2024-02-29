@@ -8,7 +8,7 @@ const InformasiHealth = () => {
         <Authenticated>
             <Head title="Informasi Kesehatan" />
             <div className="w-[90%] mx-auto mt-10">
-                <h1 className="text-[#0C2D57] text-[40px] font-bold">INFORMASI KESEHATAN</h1>
+                <h1 className="text-[#0C2D57] text-[35px] font-bold">INFORMASI KESEHATAN</h1>
                 <p className="mb-10">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur sagittis leo fringilla nibh pretium, a consectetur

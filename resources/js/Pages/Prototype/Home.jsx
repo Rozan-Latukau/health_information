@@ -5,7 +5,7 @@ import Detail from "@/Components/Detail";
 import HealthCard from "@/Components/HealthCard";
 import Flickity from "react-flickity-component";
 import Berita from "@/Components/CardBerita";
-import { Head } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 import SecondaryButton from "@/Components/SecondaryButton";
 
 const Home = () => {
@@ -69,13 +69,15 @@ const Home = () => {
                             <h1 className="font-bold text-[40px]">Berita</h1>
                             <div className="flex justify-between items-end">
                                 <p>Berita Mengenai Kesehatan secara global</p>
-                                <SecondaryButton
-                                    type="button"
-                                    variant="secondary"
-                                    className="w-[150px]"
-                                >
-                                    Selengkapnya
-                                </SecondaryButton>
+                                <Link href={route('prototype.beritaHealth')}>
+                                    <SecondaryButton
+                                        type="button"
+                                        variant="secondary"
+                                        className="w-[150px]"
+                                    >
+                                        Selengkapnya
+                                    </SecondaryButton>
+                                </Link>
                                 {/* <div className="flex">
                                     <BsCaretLeftFill className="text-3xl" />
                                     <BsCaretRightFill className="text-3xl" />

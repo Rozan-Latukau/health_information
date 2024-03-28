@@ -23,6 +23,11 @@ export default {
                 //     "form-bg": '#212121',
                 // },
                 screens: {
+                    'sm': '640px', // Mobile
+                    'md': '768px', // Tablet
+                    'lg': '1024px', // Laptop
+                    'xl': '1280px', // Desktop
+                    '2xl': '1536px', // Large Desktop
                     'laptopLg': '1160px',
                     'laptopXl': '1360px',
                 }

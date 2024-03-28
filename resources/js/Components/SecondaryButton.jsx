@@ -12,7 +12,9 @@ export default function SecondaryButton({
             {...props}
             type={type}
             className={
-                `rounded-2xl py-[13px] text-center ${processing && 'opacity-30'} btn-${variant}
+                `rounded-2xl py-[13px] text-center text-[12px] md:text-[14px] ${
+                    processing && "opacity-30"
+                } btn-${variant}
                 ` + className
             }
             disabled={disabled}

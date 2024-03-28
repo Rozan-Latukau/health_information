@@ -33,18 +33,16 @@ const Home = () => {
                 <div className="bg-[#0C2D57] pt-14 pb-14 mt-[116px]">
                     <div className="w-[90%] mx-auto">
                         <div className="text-center text-white">
-                            <h1 className="font-bold text-[40px]">
+                            <h1 className="font-bold text-[25px] md:text-[40px]">
                                 Lorem Ipsum
                             </h1>
-                            <p>
+                            <p className="text-[14px] md:text-[16px]">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. a libero{" "}
                             </p>
                         </div>
-                        <div className="mt-14">
-                            <Flickity
-                                options={flcikityOptions}
-                            >
+                        <div className="mt-10 md:mt-14">
+                            <Flickity options={flcikityOptions}>
                                 {[1, 2, 3, 4, 5].map((i) => (
                                     <HealthCard
                                         key={i}
@@ -66,14 +64,17 @@ const Home = () => {
                 <div className="bg-[#EFECEC] pt-14 pb-14 mt-[116px]">
                     <div className="w-[90%] mx-auto">
                         <div className="text-[#0C2D57]">
-                            <h1 className="font-bold text-[40px]">Berita</h1>
-                            <div className="flex justify-between items-end">
-                                <p>Berita Mengenai Kesehatan secara global</p>
-                                <Link href={route('prototype.beritaHealth')}>
+                            <h1 className="font-bold text-[25px] md:text-[40px]">
+                                Berita
+                            </h1>
+                            <div className="flex justify-between items-center ">
+                                <p className="text-[14px] md:text-[16px]">
+                                    Berita Mengenai Kesehatan secara global
+                                </p>
+                                <Link href={route("prototype.beritaHealth")}>
                                     <SecondaryButton
                                         type="button"
                                         variant="secondary"
-                                        className="w-[150px]"
                                     >
                                         Selengkapnya
                                     </SecondaryButton>
@@ -83,7 +84,7 @@ const Home = () => {
                                     <BsCaretRightFill className="text-3xl" />
                                 </div> */}
                             </div>
-                            <div className="grid grid-cols-3 gap-[30px]">
+                            <div className="flex-col md:flex md:flex-row gap-[30px]">
                                 {[1, 2, 3].map((i) => (
                                     <Berita
                                         key={i}

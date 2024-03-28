@@ -1,16 +1,16 @@
 const UserMenu = [
     {
         link: "prototype.home",
-        text: "Beranda"
+        text: "Beranda",
     },
     {
         link: "prototype.informasiHealth",
-        text: "Informasi Kesehatan"
+        text: "Informasi Kesehatan",
     },
     {
         link: "prototype.beritaHealth",
-        text: "Berita"
-    }
+        text: "Berita",
+    },
 ];
 
 export default UserMenu;

@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 PrimaryButton.propTypes = {
     type: PropTypes.oneOf(["button", "submit", "reset"]),
     className: PropTypes.string,
-    variant: PropTypes.oneOf(["orange", 'light-outline', 'white-outline']),
+    variant: PropTypes.oneOf(["orange", "light-outline", "white-outline"]),
     processing: PropTypes.bool,
     children: PropTypes.node,
-}
+};
 
 export default function PrimaryButton({
     type,
@@ -21,7 +21,9 @@ export default function PrimaryButton({
         <button
             {...props}
             className={
-                `rounded-2xl py-[13px] text-center ${processing && 'opacity-30'} btn-${variant}
+                `rounded-2xl py-[13px] text-[12px] md:text-[14px] text-center ${
+                    processing && "opacity-30"
+                } btn-${variant}
                 ` + className
             }
             disabled={disabled}

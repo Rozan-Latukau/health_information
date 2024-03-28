@@ -16,7 +16,11 @@ const Show = () => {
                     <p>30 Januari 2023</p>
                 </div>
                 <div>
-                    <img src="/images/cardartikel.png" alt="#" className="w-full h-[50%]" />
+                    <img
+                        src="/images/cardartikel.png"
+                        alt="#"
+                        className="w-full h-[50%]"
+                    />
                 </div>
                 <div className="mt-6">
                     <p className="tracking-wide">

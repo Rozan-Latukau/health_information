@@ -8,8 +8,10 @@ const InformasiHealth = () => {
         <Authenticated>
             <Head title="Informasi Kesehatan" />
             <div className="w-[90%] mx-auto mt-10">
-                <h1 className="text-[#0C2D57] text-[35px] font-bold">INFORMASI KESEHATAN</h1>
-                <p className="mb-10">
+                <h1 className="text-[#0C2D57] text-[20px] md:text-[26px] mb-[6px] md:mb-[10px] lg:text-[35px] font-bold">
+                    INFORMASI KESEHATAN
+                </h1>
+                <p className="mb-8 md:mb-[10px] text-[14px] md:text-[16px]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur sagittis leo fringilla nibh pretium, a consectetur
                     orci sagittis. Suspendisse rhoncus lobortis est vel
@@ -26,8 +28,12 @@ const InformasiHealth = () => {
                         />
                     ))}
                 </div>
-                <h1 className="mb-2 font-bold text-[20px]">Klik ini Untuk Berkonsultasi dibawah ini :</h1>
-                <PrimaryButton type="submit" variant="orange">Konsultasi</PrimaryButton>
+                <h1 className="mb-2 font-bold text-[16px] md:text-[20px]">
+                    Klik ini Untuk Berkonsultasi dibawah ini :
+                </h1>
+                <PrimaryButton type="submit" variant="orange">
+                    Konsultasi
+                </PrimaryButton>
             </div>
         </Authenticated>
     );

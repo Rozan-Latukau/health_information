@@ -9,7 +9,7 @@ const BeritaHealth = () => {
             <Head title="Berita Kesehatan" />
             <div className="w-[90%] mx-auto mt-10">
                 <HeaderBerita />
-                <div className="grid grid-cols-3 gap-[30px]">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-[20px] md:gap-[30px]">
                     {[1, 2, 3, 4, 5, 6].map((i) => (
                         <Berita
                             key={i}
@@ -21,9 +21,8 @@ const BeritaHealth = () => {
                         />
                     ))}
                 </div>
-
             </div>
-        </Authenticated >
+        </Authenticated>
     );
 };
 

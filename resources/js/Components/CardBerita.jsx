@@ -3,19 +3,21 @@ import PropTypes from "prop-types";
 
 const Berita = ({ name, thumbnail, field, text, slug }) => {
     return (
-        <div className="overflow-hidden group mt-[30px] relative">
+        <div className="overflow-hidden group mt-[25px] md:mt-[30px] relative">
             <img
                 src={thumbnail}
-                className="object-cover h-[200px] md:h-[244px] rounded-[16px]"
+                className="object-cover h-[150px] w-[100%] md:h-[244px] rounded-[16px]"
                 alt=""
             />
             <div className="text-center mt-3 md:mt-5">
                 <div>
                     <p className="text-[#FC6736] text-[12px] mb-0">{field}</p>
-                    <div className="font-bold text-[18px] md:text-[22px] text-[#0C2D57]">
+                    <div className="font-bold text-[16px] md:text-[22px] text-[#0C2D57]">
                         {name}
                     </div>
-                    <p className="text-[#0C2D57] text-[14px] mb-0">{text}</p>
+                    <p className="text-[#0C2D57] text-[12px] md:text-[14px] mb-0">
+                        {text}
+                    </p>
                 </div>
             </div>
             <Link
